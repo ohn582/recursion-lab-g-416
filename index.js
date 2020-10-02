@@ -10,13 +10,15 @@ function printString(myString) {
 }
 
 
-function reverseString(myString) {
-  console.log(myString[0]);
+function reverseString(window) {
+  // console.log(window);
  
-  if (myString.length < 1) {
-    let mySubString = myString.substring(1, myString.length);
-    printString(mySubString);
-  } else {
-    return true;
+  if (1 >= window.length) {
+    let cut = window.split('');
+    printString(cut.reverse().join(''));
   }
+  
+  // let cut = window.split('');
+  // cut.reverse().join('')
+ 
 }
